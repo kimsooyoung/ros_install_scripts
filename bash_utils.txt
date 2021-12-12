@@ -1,0 +1,19 @@
+alias eb='gedit ~/.bashrc'
+alias sb='source ~/.bashrc'
+alias gs='git status'
+alias gp='git pull'
+alias cw='cd ~'
+alias cs='cd ~/src'
+alias cm='cd ~ && catkin_make'
+
+alias cma='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
+alias cop='catkin_make --only-pkg-with-deps'
+alias sds='source devel/setup.bash'
+alias axclient='rosrun actionlib axclient.py'
+alias killg='killall -9 gzserver && killall -9 gzclient && killall -9 rosmaster'
+
+alias cba='colcon build --symlink-install'
+alias cbp='colcon build --symlink-install --packages-select'
+
+alias rosmelo="source /opt/ros/melodic/setup.bash"
+alias rosdepmelo="rosdep install -y -r -q --from-paths src --ignore-src --rosdistro melodic"
