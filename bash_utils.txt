@@ -13,7 +13,10 @@ alias axclient='rosrun actionlib axclient.py'
 alias killg='killall -9 gzserver && killall -9 gzclient && killall -9 rosmaster'
 
 alias cba='colcon build --symlink-install'
+alias cbr='colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release'
 alias cbp='colcon build --symlink-install --packages-select'
+
+alias rosdinstall='rosdep install -y -r -q --from-paths src --ignore-src --rosdistro'
 
 alias rosmelo="source /opt/ros/melodic/setup.bash"
 alias rosdepmelo="rosdep install -y -r -q --from-paths src --ignore-src --rosdistro melodic"
